@@ -1,45 +1,64 @@
-window.onload = function(){
+window.addEventListener("load", function(){
+    
+    let all_btn = document.querySelector(".all");
+    let sl_btn = document.querySelector(".sl");
+    let sup_btn = document.querySelector(".s");
+    let result = document.querySelector(".result");
 
-    function filterType(type){
-        return fetch(`http://localhost/info2180-project2/d1ashboard.php?query=${type}`)
-            .then((response) => {
-                if (response.ok) {
-                    return response.text()
-                }
-                else{
-                    throw new Error(`Error! status: ${response.status}`)
-                }
-            })
-            .then((data) => data)
-            .catch((err) => err);
-    }
+    all_btn.addEventListener("click", function(event){
+        event.preventDefault();
 
+        let url = `dashboard.php?filter=All`;
+        console.log(url);
 
-    document.getElementById("all").onclick = e => {
-        e.preventDefault();
-        filterType("").then(
-            (data) => (document.getElementById("Contacts").innerHTML = data)
-          );
-        };
+        fetch(url)
+        .then(function (response) {
+            if (response.ok) {
+            return response.text();
+            } else {
+            throw new Error(response.statusText);
+            }
+        })
+        .then(function (data) {
+            result.innerHTML = data;
+        });
+    })
 
-    document.getElementById("sl").onclick = e => {
-        e.preventDefault();
-        filterType("Sales Lead").then(
-            (data) => (document.getElementById("Contacts").innerHTML = data)
-          );
-        };
+    sl_btn.addEventListener("click", function(event){
+        event.preventDefault();
 
-    document.getElementById("s").onclick = e => {
-        e.preventDefault();
-        filterType("Support").then(
-            (data) => (document.getElementById("Contacts").innerHTML = data)
-          );
-        };
+        let url = `dashboard.php?filter=SalesLead`;
+        console.log(url);
 
-    document.getElementById("atm").onclick = e => {
-        e.preventDefault("");
-        filterType().then(
-            (data) => (document.getElementById("Contacts").innerHTML = data)
-          );
-        };
-}
+        fetch(url)
+        .then(function (response) {
+            if (response.ok) {
+            return response.text();
+            } else {
+            throw new Error(response.statusText);
+            }
+        })
+        .then(function (data) {
+            result.innerHTML = data;
+        });
+    })
+
+    sup_btn.addEventListener("click", function(event){
+        event.preventDefault();
+
+        let url = `dashboard.php?filter=Support`;
+        console.log(url);
+
+        fetch(url)
+        .then(function (response) {
+            if (response.ok) {
+            return response.text();
+            } else {
+            throw new Error(response.statusText);
+            }
+        })
+        .then(function (data) {
+            result.innerHTML = data;
+        });
+    })
+})

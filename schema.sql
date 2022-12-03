@@ -48,11 +48,11 @@ CREATE TABLE Notes(
 
  
 INSERT INTO Users (firstname, lastname, password, email, role, created_at)VALUES ('Aliek', 'Chambers', 'password123', 'admin@project2.com', 'Admin', NOW() );
-INSERT INTO Contacts(title,firstname,lastname,email,telephone,company,type,created_at,updated_at)VALUES('Mr ','Ghabba ','Ghoul','test@gmail.com','876-842-3456','Test','Support',NOW(),NOW());
-INSERT INTO Contacts(title,firstname,lastname,email,telephone,company,type,created_at,updated_at)VALUES('Mr ','KrisP ','Bacon','test@gmail.com','876-234-3456','Test','Sales Lead',NOW(),NOW());
-INSERT INTO Contacts(title,firstname,lastname,email,telephone,company,type,created_at,updated_at)VALUES('Mr ','Humbert ','Humbert','test@gmail.com','876-842-3658','Test','Sales Lead',NOW(),NOW());
-INSERT INTO Contacts(title,firstname,lastname,email,telephone,company,type,created_at,updated_at)VALUES('Ms ','Dolores ','Gale','test@gmail.com','876-905-9156','Test','Support',NOW(),NOW());
-INSERT INTO Contacts(title,firstname,lastname,email,telephone,company,type,created_at,updated_at)VALUES('Mr ','Hell ','Shire','test@gmail.com','876-123-4311','Test','Support',NOW(),NOW());
-INSERT INTO Contacts(title,firstname,lastname,email,telephone,company,type,created_at,updated_at)VALUES('Mr ','Isee ','UPee','test@gmail.com','876-842-3456','Test','Sales Lead',NOW(),NOW());
-INSERT INTO Contacts(title,firstname,lastname,email,telephone,company,type,created_at,updated_at)VALUES('Ms ','Nick ','Gerr','test@gmail.com','876-341-6678','Test','Support',NOW(),NOW());
-INSERT INTO Contacts(title,firstname,lastname,email,telephone,company,type,created_at,updated_at)VALUES('Mrs ','Rusty ','Plank','test@gmail.com','909-966-3456','Test','Support',NOW(),NOW());
+INSERT INTO Contacts(title,firstname,lastname,email,telephone,company,type,created_at,updated_at)VALUES('Mr','Ghabba','Ghoul','test@gmail.com','876-842-3456','Test','Support',NOW(),NOW());
+INSERT INTO Contacts(title,firstname,lastname,email,telephone,company,type,created_at,updated_at)VALUES('Mr','KrisP','Bacon','test@gmail.com','876-234-3456','Test','Sales Lead',NOW(),NOW());
+INSERT INTO Contacts(title,firstname,lastname,email,telephone,company,type,created_at,updated_at)VALUES('Mr','Humbert','Humbert','test@gmail.com','876-842-3658','Test','Sales Lead',NOW(),NOW());
+INSERT INTO Contacts(title,firstname,lastname,email,telephone,company,type,created_at,updated_at)VALUES('Ms','Dolores','Gale','test@gmail.com','876-905-9156','Test','Support',NOW(),NOW());
+INSERT INTO Contacts(title,firstname,lastname,email,telephone,company,type,created_at,updated_at)VALUES('Mr','Hell','Shire','test@gmail.com','876-123-4311','Test','Support',NOW(),NOW());
+INSERT INTO Contacts(title,firstname,lastname,email,telephone,company,type,created_at,updated_at)VALUES('Mr','Isee','UPee','test@gmail.com','876-842-3456','Test','Sales Lead',NOW(),NOW());
+INSERT INTO Contacts(title,firstname,lastname,email,telephone,company,type,created_at,updated_at)VALUES('Ms','Nick','Gerr','test@gmail.com','876-341-6678','Test','Support',NOW(),NOW());
+INSERT INTO Contacts(title,firstname,lastname,email,telephone,company,type,created_at,updated_at)VALUES('Mrs','Rusty','Plank','test@gmail.com','909-966-3456','Test','Support',NOW(),NOW());
